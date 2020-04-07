@@ -1,0 +1,6 @@
+time="2020-03-30T17:37:15+08:00" level=info msg="server init"
+time="2020-03-30T17:37:15+08:00" level=panic msg="connect db root:root@tcp(127.0.0.1:3306)/?charset=utf8&parseTime=True error:Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"
+time="2020-03-30T17:38:19+08:00" level=info msg="server init"
+time="2020-03-30T17:38:20+08:00" level=panic msg="connect db root:root@tcp(127.0.0.1:3306)/?charset=utf8&parseTime=True error:Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"
+time="2020-03-30T17:39:27+08:00" level=info msg="server init"
+time="2020-03-30T17:39:28+08:00" level=panic msg="connect db root:root@tcp(127.0.0.1:3306)/?charset=utf8&parseTime=True error:Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"

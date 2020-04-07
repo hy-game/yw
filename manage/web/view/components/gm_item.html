@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {{template "header"}}
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/chosen/1.8.7/chosen.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        $(function(){
+            $("#mtype").change(function () {
+                var val = $("#mtype").val();
+                var cfg_key = "";
+                if (val == 1){
+                    cfg_key = "EquipLists";
+                    //$("#gmParam").attr("placeholder", "装备配置id");
+                }
+                if (val == 2){
+                    cfg_key = "HeroAttri";
+                    //$("#gmParam").attr("placeholder", "武将配置id");
+                }
+                if (val == 3){
+                    cfg_key = "GoodsList";
+                    //$("#gmParam").attr("placeholder", "物品配置id");
+                }
+
+                $.post("/cfgs/item_cfg",
+                    {
+                        chan : "game",
+                        cfg_key: cfg_key,
+                    },
+                    function(data, status){
+                        $("#gmParamDiv").html(data);
+                        $("#gmParamDiv").trigger("chosen:updated");
+                        $(".chosen_sel").chosen();
+                    });
+            });
+
+            // $.post("/cfgs/item_cfg",
+            //     {
+            //         chan : "game",
+            //         cfg_key: "HeroAttri",
+            //     },
+            //     function(data, status){
+            //         $("#heroes_cfg").html(data);
+            //         $("#heroes_cfg").trigger("chosen:updated");
+            //     });
+            //
+            // $.post("/cfgs/item_cfg",
+            //     {
+            //         chan : "game",
+            //         cfg_key: "GoodsList",
+            //     },
+            //     function(data, status){
+            //         $("#goods_cfg").html(data);
+            //         $("#goods_cfg").trigger("chosen:updated");
+            //     });
+
+            //$(".chosen_sel").trigger("liszt:updated");
+            //$(".chosen_sel").chosen();
+
+        });
+    </script>
+</head>
+<body>
+<div id="context" class="col-sm-8">
+    <h2>GM</h2>
+    <h5>物品GM命令</h5>
+    <p>一些与物品相关的GM命令在此使用： 如给指定玩家发放物品等！</p>
+
+    <form class="form-horizontal" id="gmRole" role="form" action="/gm/item" method="post">
+        <div class="form-group">
+            <label for="command" class="col-xs-3 control-label">GM命令:</label>
+            <div class="col-xs-9">
+                <select id="command" name="command" class="form-control">
+                    <option value="additem">添加Item</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="mtype" class="col-xs-3 control-label">物品类型:</label>
+            <div class="col-xs-9">
+                <select id="mtype" name="mtype" class="form-control">
+                    <option value="1">装备</option>
+                    <option value="2">武将</option>
+                    <option value="3">物品</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="gmParam" class="col-xs-3 control-label">配置id:</label>
+            <div id="gmParamDiv" class="col-xs-9">
+                <input type="text" class="form-control" id="gmParam" name="gmParam" placeholder="装备配置id" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="mcount" class="col-xs-3 control-label">数量:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="mcount" name="mcount" placeholder="数量" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="gmPlayer" class="col-xs-3 control-label">玩家:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="gmPlayer" name="gmPlayer" placeholder="玩家GUID" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+                <button type="submit" class="btn btn-default">执行</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

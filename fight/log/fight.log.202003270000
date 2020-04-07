@@ -1,0 +1,8 @@
+time="2020-03-27T15:03:22+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-03-27T15:03:22+08:00" level=info msg="add consumer t:fight1, c:ft"
+time="2020-03-27T15:03:22+08:00" level=info msg="add consumer t:fight, c:ft"
+time="2020-03-27T15:03:22+08:00" level=info msg="add consumer t:fightAll, c:ft1"
+time="2020-03-27T15:03:22+08:00" level=trace msg="send to manage [7500][Ft2MaConfigReq] "
+time="2020-03-27T15:03:22+08:00" level=info msg="Config all load begin..."
+time="2020-03-27T15:03:24+08:00" level=info msg="Config all load finish..."
+time="2020-03-27T15:03:24+08:00" level=info msg="listening on [::]:5001"

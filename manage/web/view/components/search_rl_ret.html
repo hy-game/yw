@@ -1,0 +1,25 @@
+<div class="pre-scrollable">
+<table class="table">
+    <caption>{{.Type}}</caption>
+    <thead>
+    <tr>
+        <th>Guid</th>
+        <th>分数</th>
+        <th>名称</th>
+        <th>等级</th>
+        <th>工会名</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{range .Data}}
+    <tr>
+        <td>{{.Id}}</td>
+        <td>{{.Score}}</td>
+        <td>{{.Name}}</td>
+        <td>{{.Level}}</td>
+        <td>{{.AllyName}}</td>
+    </tr>
+    {{end}}
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,4 @@
+^MsgDBCfg	string:Type	string:Name	string:IP	uint32:Port	string:User	string:Password
+#	role	yw_game	192.168.0.126	3306	root	123
+#	misc	yw_misc	192.168.0.126	3306	root	123
+#	log	yw_log	192.168.0.126	3306	root	123

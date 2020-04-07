@@ -1,0 +1,8 @@
+time="2020-04-01T09:30:35+08:00" level=info msg="server init"
+time="2020-04-01T09:30:35+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-04-01T09:30:35+08:00" level=info msg="add consumer t:manage, c:manage"
+time="2020-04-01T09:30:35+08:00" level=info msg="start success, listen http on:8001"
+time="2020-04-01T17:11:37+08:00" level=info msg="server init"
+time="2020-04-01T17:11:38+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-04-01T17:11:38+08:00" level=info msg="add consumer t:manage, c:manage"
+time="2020-04-01T17:11:38+08:00" level=info msg="start success, listen http on:8001"

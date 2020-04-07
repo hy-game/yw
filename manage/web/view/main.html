@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>标题栏</title>
+    {{template "header"}}
+    <script type="text/javascript">
+        $(function(){
+            $("#listbox").load("/components/gm_list");
+
+            $("#tomain").click(function () {
+                $("#mainlist").children().filter(".active").attr("class", "");
+                $("#tomain").attr("class","active");
+                $("#context").attr("src", "/components/gm_role");
+                $("#listbox").load("/components/gm_list");
+            });
+
+            $("#tosearch").click(function () {
+                $("#mainlist").children().filter(".active").attr("class", "");
+                $("#tosearch").attr("class","active");
+                $("#context").attr("src", "/components/search_role");
+                $("#listbox").load("/components/search_list");
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <style type="text/css">
+        #context{
+            width:800px;
+            height:900px;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>服务器简单管理页面</h1>
+    <p>这是一个服务器的简单管理页面</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Simple Manage Page</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul id="mainlist" class="nav navbar-nav">
+                <li id="tomain" class="active"><a href="#">主页</a></li>
+                <li id="tosearch"><a href="#">查询</a></li>
+                <li><a href="#">不重要</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        下拉
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">不重要</a></li>
+                        <li><a href="#">不重要</a></li>
+                        <li><a href="#">不重要</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">不重要</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">不重要</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <!-- 登录玩家 -->
+            <h2>关于我</h2>
+            <p>
+                这是一个简单的测试用页面
+            </p>
+            <p>
+                GM命令可以从这里发送
+            </p>
+
+            <!-- 目录列表 -->
+            <div id="listbox">
+
+            </div>
+
+        </div>
+        <div class="col-sm-8">
+            <!-- 页面核心数据 -->
+            <iframe frameborder="0" id="context" class="context" scrolling="no" src="/components/gm_role">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p id="bottomp">版权（不重要）</p>
+</div>
+</body>
+</html>

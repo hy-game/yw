@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/com" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/Unknwon/goconfig" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/agnivade/wasmbrowsertest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/astaxie/beego" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/beego/bee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/beego/i18n" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/beego/samples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/bitly/nsq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/cespare/xxhash" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/chromedp/cdproto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/chromedp/chromedp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/dennwc/dom" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/disintegration/imaging" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/go-interpreter/wagon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/golang/snappy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/google/gops" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/google/pprof" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/gorilla/websocket" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/knq/sysutil" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/markfarnan/go-canvas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/maxence-charriere/app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/nsqio/go-nsq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/nsqio/nsq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/segmentio/conf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/segmentio/go-snakecase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/segmentio/objconv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/shiena/ansicolor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/shurcooL/go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/shurcooL/go-goon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/shurcooL/goexec" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/stretchr/testify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/tealeg/xlsx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/vugu/html" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/vugu/vugu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/golang.org/x/net" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/golang.org/x/text" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gopkg.in/go-playground/mold.v2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gopkg.in/validator.v2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gopkg.in/yaml.v2" vcs="Git" />
+  </component>
+</project>

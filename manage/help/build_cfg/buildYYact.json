@@ -1,0 +1,27 @@
+{
+  "paths":[
+    {
+      "name":"game",
+      "path":"../../../../game/configs/"
+    },
+    {
+      "name":"center",
+      "path":"../../../../center/configs/"
+    }
+  ],
+  "packages":[
+    "\"pb\"",
+    "\"com/cfgs\""
+  ],
+  "structs":[
+    {
+      "name":"y/test",
+      "struct":"pb.MsgCfgTest"
+    },
+    {
+      "name":"y/test1",
+      "field":"test",
+      "struct":"pb.MsgCfgTest"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+time="2020-03-25T11:07:58+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-03-25T11:07:58+08:00" level=info msg="add consumer t:fight0, c:ft"
+time="2020-03-25T11:07:58+08:00" level=info msg="add consumer t:fight, c:ft"
+time="2020-03-25T11:07:58+08:00" level=info msg="listening on [::]:5001"
+time="2020-03-25T14:19:48+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-03-25T14:19:48+08:00" level=info msg="add consumer t:fight0, c:ft"
+time="2020-03-25T14:19:48+08:00" level=info msg="add consumer t:fight, c:ft"
+time="2020-03-25T14:19:48+08:00" level=info msg="listening on [::]:5001"

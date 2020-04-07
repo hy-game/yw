@@ -1,0 +1,4 @@
+time="2020-03-19T17:09:30+08:00" level=info msg="server init"
+time="2020-03-19T17:09:30+08:00" level=info msg="add producer to 192.168.0.160:4150"
+time="2020-03-19T17:09:30+08:00" level=info msg="add consumer t:account, c:acc1"
+time="2020-03-19T17:09:30+08:00" level=info msg="add consumer t:broadcast, c:acc1"

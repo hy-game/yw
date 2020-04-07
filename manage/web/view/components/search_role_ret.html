@@ -1,0 +1,73 @@
+<table class="table">
+    <caption>角色基本信息</caption>
+    <thead>
+    <tr>
+        <th>Guid</th>
+        <th>账号</th>
+        <th>名称</th>
+        <th>等级</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{.Guid}}</td>
+        <td>{{.Account}}</td>
+        <td>{{.Name}}</td>
+        <td>{{.Level}}</td>
+    </tr>
+    </tbody>
+</table>
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active">
+        <a href="#RoleGoods" data-toggle="tab">物品</a>
+    </li>
+    <li><a href="#RoleHeros" data-toggle="tab">武将</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active pre-scrollable" id="RoleGoods">
+        <br />
+        <table class="table">
+            <thead>
+            <tr>
+                <th>配置id</th>
+                <th>数量</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{range $k,$v := .Items}}
+                <tr>
+                    <td>{{$k}}</td>
+                    <td>{{$v}}</td>
+                </tr>
+            {{end}}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tab-pane fade pre-scrollable" id="RoleHeros">
+        <br />
+        <table class="table">
+            <thead>
+            <tr>
+                <th>配置id</th>
+                <th>Guid</th>
+                <th>星级</th>
+                <th>品阶</th>
+                <th>等级</th>
+            </tr>
+            </thead>
+            <tbody>
+        {{range $k,$v := .Heros}}
+            <tr>
+                <td>{{$v.CfgId}}</td>
+                <td>{{$v.Guid}}</td>
+                <td>{{$v.Star}}</td>
+                <td>{{$v.PinJie}}</td>
+                <td>{{$v.Level}}</td>
+            </tr>
+        {{end}}
+            </tbody>
+        </table>
+    </div>
+
+</div>

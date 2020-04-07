@@ -1,0 +1,9 @@
+{
+	"ReadDeadline": 0,
+	"OutChanSize": 128,
+	"ReadSocketBuffSize": 32767,
+	"WriteSocketBuffSize": 32767,
+	"RpmLimit": 0,
+	"RecvPkgLenLimit": 256,
+	"EvtChanSize": 512
+}

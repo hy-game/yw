@@ -1,0 +1,7 @@
+time="2020-04-02T14:50:45+08:00" level=info msg="server init"
+time="2020-04-02T14:50:45+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-04-02T14:50:45+08:00" level=info msg="add consumer t:account, c:acc1 to [127.0.0.1:4161]"
+time="2020-04-02T14:50:45+08:00" level=info msg="add consumer t:broadcast, c:acc1 to [127.0.0.1:4161]"
+time="2020-04-02T14:50:45+08:00" level=info msg="start success. httpPort:8081"
+time="2020-04-02T15:44:06+08:00" level=trace msg="handle [500]Gt2AccLogin cost:0s from:1 Acc:\"joven\" SesOnGt:2 GtID:1 "
+time="2020-04-02T15:44:06+08:00" level=trace msg="send to gate1 [1000][Acc2GtLoginAck] Data:<Acc:\"joven\" SesOnGt:2 GtID:1 > GameID:1 "

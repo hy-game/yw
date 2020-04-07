@@ -1,0 +1,4 @@
+time="2020-03-25T11:07:59+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-03-25T11:07:59+08:00" level=info msg="add consumer t:fcenter, c:fc"
+time="2020-03-25T14:19:50+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-03-25T14:19:50+08:00" level=info msg="add consumer t:fcenter, c:fc"

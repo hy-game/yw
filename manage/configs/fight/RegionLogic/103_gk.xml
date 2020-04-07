@@ -1,0 +1,56 @@
+<root>
+  <BornBos Pos="50.78623,0.1,0.39" Yaw="-90" />
+  <TriggerList>
+    <Trigger Id="1" StartState="True" Type="Sphere" Pos="30.48,0.1,-0.77" Radius="5.5" TargetType="WuJiang" JustLocal="False" OnceTime="True" EffectStartState="True" />
+    <Trigger Id="2" StartState="True" Type="Sphere" Pos="-28.92,0,0.03" Radius="6" TargetType="WuJiang" JustLocal="False" OnceTime="True" EffectStartState="True" />
+  </TriggerList>
+  <DynamicWallList />
+  <CollectAreaList />
+  <AreaList>
+    <Area Id="1" TriggerId="1">
+      <ScriptList Type="Enter">
+        <Script Id="1" Path="RegionLogic/PlayInteractChatForCshap" Param="103" />
+      </ScriptList>
+      <Difficulty level="1">
+        <MonsterWave Id="1">
+          <monster name="103_M_01" Pos="19.89,0.1,-0.94" Yaw="87.69626" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="103_M_02" Pos="17.4,0.1,0.55" Yaw="87.69626" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+        </MonsterWave>
+        <MonsterWave Id="2">
+          <monster name="103_M_01" Pos="1.19,0.1,-0.99" Yaw="87.69626" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="103_M_02" Pos="-1.3,0.1,0.59" Yaw="87.69626" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="103_M_01" Pos="-2.47,0.1,-0.93" Yaw="87.69626" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="103_M_02" Pos="-4.959,0.1,0.56" Yaw="87.69626" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+        </MonsterWave>
+      </Difficulty>
+    </Area>
+    <Area Id="2" TriggerId="2">
+      <Difficulty level="1">
+        <MonsterWave Id="1">
+          <monster name="103_BOSS_01" Pos="-36.68,0.2,-0.85" Yaw="87.696" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+        </MonsterWave>
+      </Difficulty>
+    </Area>
+  </AreaList>
+  <FinishTypeList>
+    <FinishType Id="7" DescribeID="1" Win="True" Param="100" />
+    <FinishType Id="1" DescribeID="1" Win="False" />
+    <FinishType Id="3" DescribeID="1" Win="False" />
+  </FinishTypeList>
+  <KillMonsterCountProgress TotalCount="100" />
+  <PreScript Path="Region/RegionLogicSecond/SetTemplateEmBattle" Param="13" />
+</root>

@@ -1,0 +1,79 @@
+<root>
+  <BornBos Pos="-8.1,-0.504,-85.82" Yaw="6.34019" />
+  <TriggerList>
+    <Trigger Id="1" StartState="True" Type="Box" Pos="-3.96,0.1,-87.7" Size="18.01864,12.6335,7.53971" Yaw="0" TargetType="WuJiang" JustLocal="False" OnceTime="True" EffectStartState="True" />
+    <Trigger Id="2" StartState="True" Type="Box" Pos="-4.78,0.19,-78.04" Size="19.4194,11.9372,0.867163" Yaw="0" TargetType="WuJiang" JustLocal="False" OnceTime="True" EffectStartState="True" />
+    <Trigger Id="3" StartState="True" Type="Box" Pos="-4.59,0.283,-72.39" Size="23.221,11,0.7980726" Yaw="0" TargetType="WuJiang" JustLocal="False" OnceTime="True" EffectStartState="True" />
+    <Trigger Id="4" StartState="True" Type="Box" Pos="-5.14,0.283,-63.92" Size="21.0188,11,2.523199" Yaw="0" TargetType="WuJiang" JustLocal="False" OnceTime="True" EffectStartState="True" />
+    <Trigger Id="5" StartState="True" Type="Box" Pos="-8.04,0.283,-39.86" Size="11,11,1.54242" Yaw="0" TargetType="WuJiang" JustLocal="False" OnceTime="True" EffectStartState="True" />
+  </TriggerList>
+  <DynamicWallList />
+  <CollectAreaList />
+  <AreaList>
+    <Area Id="1" TriggerId="1">
+      <ScriptList Type="Enter">
+        <Script Id="1" Path="RegionLogic/PlayInteractChatForCshap" Param="100101" />
+      </ScriptList>
+      <Difficulty level="1" />
+    </Area>
+    <Area Id="2" TriggerId="2">
+      <Difficulty level="1">
+        <MonsterWave Id="1">
+          <monster name="104_M_01" Pos="-13.31,-0.15,-49.35" Yaw="173.6458" NeedKillWhenFinish="True">
+            <ScriptList Type="Created">
+              <Script Id="1" Path="RegionLogic/PlayInteractChatForCshap" Param="100102" />
+            </ScriptList>
+            <ai ExcludeMonsterGID="" />
+          </monster>
+        </MonsterWave>
+      </Difficulty>
+    </Area>
+    <Area Id="3" TriggerId="3">
+      <ScriptList Type="Enter">
+        <Script Id="1" Path="RegionLogic/PlayInteractChatForCshap" Param="100103" />
+      </ScriptList>
+      <Difficulty level="1" />
+    </Area>
+    <Area Id="4" TriggerId="4">
+      <ScriptList Type="Exit">
+        <Script Id="1" Path="RegionLogic/PlayInteractChatForCshap" Param="100104" />
+      </ScriptList>
+      <Difficulty level="1">
+        <MonsterWave Id="1">
+          <monster name="104_M_01" Pos="-9.5,-0.15,-51.86" Yaw="173.6458" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="104_M_01" Pos="-13.84,-0.15,-48.4" Yaw="173.6458" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="104_M_01" Pos="-17.93,-0.15,-52.89" Yaw="173.6458" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+        </MonsterWave>
+      </Difficulty>
+    </Area>
+    <Area Id="5" TriggerId="5">
+      <ScriptList Type="Exit">
+        <Script Id="1" Path="RegionLogic/PlayInteractChatForCshap" Param="100105" />
+      </ScriptList>
+      <Difficulty level="1">
+        <MonsterWave Id="1">
+          <monster name="104_M_01" Pos="-10.06,-0.15,-18.67" Yaw="173.6458" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="104_M_01" Pos="-9.5,-0.15,-15.4" Yaw="173.6458" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+          <monster name="104_M_01" Pos="-6,-0.15,-18.9" Yaw="173.6458" NeedKillWhenFinish="True">
+            <ai ExcludeMonsterGID="" />
+          </monster>
+        </MonsterWave>
+      </Difficulty>
+    </Area>
+  </AreaList>
+  <FinishTypeList>
+    <FinishType Id="1" DescribeID="1" Win="True" />
+  </FinishTypeList>
+  <KillMonsterCountProgress TotalCount="100" />
+  <PreScript Path="Region/RegionLogicSecond/SetTemplateEmBattle" Param="13" />
+</root>

@@ -1,0 +1,4 @@
+排行榜配置
+标识符	排行榜类型	排行榜显示长度	排行榜实际长度	排行榜刷新间隔(秒)
+^MsgRankListCfg	ERankListType:Type	sint32:ShowLen	sint32:MaxLen	uint32:RefreshSpan
+#	0	50	5000	300

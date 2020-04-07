@@ -1,0 +1,3 @@
+time="2020-04-02T14:50:56+08:00" level=info msg="add producer to 127.0.0.1:4150"
+time="2020-04-02T14:50:56+08:00" level=info msg="add consumer t:fcenter, c:fc to [127.0.0.1:4161]"
+time="2020-04-02T14:50:56+08:00" level=info msg="start success. httpPort:%!d(MISSING)"

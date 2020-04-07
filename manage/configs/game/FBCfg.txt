@@ -1,0 +1,4 @@
+主线关卡							
+^MsgFBCfg	uint32:ID	uint32:FightCnt	uint32:FirstWinItem	uint32:FirstWinICnt	uint32:Item	uint32:ItemCnt	uint32:DayCnt
+	关卡ID	挑战次数	首次通关奖励道具ID	首次通关奖励道具数量	通关奖励道具1	道具1数量	道具1每日获得次数
+#	10001	30	101	1	102	3	10

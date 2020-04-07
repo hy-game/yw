@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {{template "header"}}
+
+    <script type="text/javascript">
+        $(function () {
+            $("#search_run").click(function () {
+                var val = $("#pid").val();
+                $.post("/gm/search_role",
+                    {
+                        search_key: val,
+                    },
+                    function(data,status){
+                        $("#search_ret").html(data);
+                    });
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="context" class="col-sm-8">
+    <h2>角色</h2>
+    <h5>查询角色数据</h5>
+    <p>在这里可以查看玩家的实时数据：玩家在线的情况</p>
+
+    <div id="myTabContent" class="tab-content">
+        <form class="bs-example bs-example-form" role="form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">玩家id</span>
+                        <input type="text" id="pid" class="form-control">
+                        <span class="input-group-btn">
+                        <button id="search_run" class="btn btn-default" type="button">查询</button>
+                    </span>
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </form>
+    </div>
+
+    <div id="search_ret">
+    </div>
+</div>
+</body>
+</html>

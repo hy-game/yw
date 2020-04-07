@@ -1,0 +1,44 @@
+{
+	"paths":[
+		{
+			"name":"game",
+			"path":"../../../game/configs/"
+		},
+		{
+			"name":"center",
+			"path":"../../../center/configs/"
+		}
+	],
+	"packages":[
+		"\"pb\"",
+		"\"com/cfgs\""
+	],
+	"structs":[
+		{
+			"path": true,
+			"name":"game/a/",
+			"struct":"pb.MsgCfgTest"
+		},
+		{
+			"name":"game/a/test1",
+			"field":"test",
+			"struct":"pb.MsgCfgTest"
+		},
+		{
+			"name":"center/GiftPack/channelgroup",
+			"struct":"pb.MsgGiftChannelGroup"
+		},
+		{
+			"name":"game/item",
+			"struct":"pb.MsgItemCfg"
+		},
+		{
+			"name":"center/GiftPack/GiftData",
+			"struct":"pb.MsgCfgGiftData"
+		},
+		{
+			"name":"util/utest",
+			"struct":"pb.MsgCfgTest"
+		}
+	]
+}

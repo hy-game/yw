@@ -1,0 +1,6 @@
+关卡配置													
+^MsgRegionList	uint32:ID	.	.	.	EFBType:Type	.	.	.	uint32:Level	uint32:Time	uint32:CostItem	uint32:CostCnt	uint32:CheckType
+	关卡ID	关卡图集_图片	关卡名字	关卡描述	关卡类型	场景资源名字	场景音乐	音乐音量	关卡解锁等级	关卡时间限制	挑战所需道具ID	挑战所需道具数量	校验类型
+#	104	GQ_a01	aaa	aaa	FBTNormal	Scene_Q1	SceneMusic/M1	11	1	222	101	2	0
+#	105	GQ_a01	aaa	aaa	FBTNormal	Scene_Q1	SceneMusic/M1	11	1	222	101	2	1
+#	102	GQ_a01	aaa	aaa	FBTNormal	Scene_Q1	SceneMusic/M1	11	1	222	101	2	2

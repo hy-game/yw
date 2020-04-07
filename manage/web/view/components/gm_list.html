@@ -1,0 +1,29 @@
+<h3>GM</h3>
+<p>以下是一些GM操作的相关页面</p>
+<ul id="listul" class="nav nav-pills nav-stacked">
+    <li id="listl_role" class="active"><a href="#">角色属性</a></li>
+    <li id="listl_item" ><a href="#">物品操作</a></li>
+    <li id="listl_system" ><a href="#">系统GM命令</a></li>
+</ul>
+<hr class="hidden-sm hidden-md hidden-lg">
+<script type="text/javascript">
+    $(function(){
+        $("#listl_role").click(function () {
+            $("#listul").children().filter(".active").attr("class", "");
+            $("#listl_role").attr("class", "active");
+            $("#context").attr("src", "/components/gm_role");
+        });
+
+        $("#listl_item").click(function () {
+            $("#listul").children().filter(".active").attr("class", "");
+            $("#listl_item").attr("class", "active");
+            $("#context").attr("src", "/components/gm_item");
+        });
+
+        $("#listl_system").click(function () {
+            $("#listul").children().filter(".active").attr("class", "");
+            $("#listl_system").attr("class", "active");
+            $("#context").attr("src", "/components/gm_system");
+        });
+    });
+</script>
